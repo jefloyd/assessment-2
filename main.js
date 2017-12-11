@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+
+///////SET CONDITION TO MOVE RACER 1 HERE///////
+
 //keycode 39 = right arrow (Blue motorbike)
 $(document).keyup(function(event) {//these two function are the same. One for racer1 key 29 and racer2 key 32.
 	console.log('hi3');
@@ -10,27 +13,23 @@ $(document).keyup(function(event) {//these two function are the same. One for ra
 
 });//end of the keyup for 39 function 
 
-	
-//keycode 32 = Spacebar (Green motorbike)
+//////SET CONDIDITON TO MOVE RACER 2 HERE///////	
+
+//keycode 90 = Z button (Green motorbike)
 $(document).keyup(function(event) {  //this line grabs hold of the HTML doc and tells it to listen for a keyup even 
-	if (event.which == 32) { //this line says that if the keyup function is keycode 32 to perform line below
+	if (event.which == 90) { //this line says that if the keyup function is keycode90 to perform line below
 		$('#racer2').css('margin-left', '+=5%');//if keycode ==32 increase the left margin 5%.
 
 	}
+});//end of the key up for 90 function
+////////SET WIN CONDITION BELOW HERE//////////
 
- //$(document).on('keyup'["racer1"].css['margin-left', '==90%']);
-
-	/*if (event.which == 'margin-left'){ 
-		$('#racer2').css('margin-left', '==90%'){
-		alert("RACER 2 WINS!");
-		}
-	}*/
+if($('#racer1').css("margin-left")=="90%") {
+         //do something here
+         alert("Racer1 WINS!");
+      }
+   
+};
 
 	
-
-});//end of the key up for 32 function
-
-
-
-
 });//end of the document.ready(function) line
