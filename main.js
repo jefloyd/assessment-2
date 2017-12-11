@@ -22,14 +22,14 @@ $(document).keyup(function(event) {  //this line grabs hold of the HTML doc and 
 
 	}
 });//end of the key up for 90 function
-////////SET WIN CONDITION BELOW HERE//////////
+////////SET WIN CONDITION BELOW HERE///////////
 
-if($('#racer1').css("margin-left")=="90%") {
+if($('#racer1').css("margin-left")=="90%") {  //this line should specify that if #racer1/2's css margin is == 90% 
          //do something here
-         alert("Racer1 WINS!");
+         alert("Racer1 WINS!"); //alert for when left margin == 90%
       }
    
-};
+});
 
 	
 });//end of the document.ready(function) line
