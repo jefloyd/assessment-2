@@ -74,6 +74,7 @@ body{
 
 
 }
+/*I've given a glow effect to the h1 element*/
 h1{
 	color:white;
 	margin-bottom:20px;
@@ -107,6 +108,7 @@ h1{
 	height: 100%;
 	position: relative;
 }
+/*I've given a glow effect to the text */
 p{
 	color:white;
 	margin-bottom:20px;
@@ -123,12 +125,13 @@ p{
 	transform-origin: 50% 50% 0;
 }
 
+
 #go{
 	text-align: center;
 	display: block;
 
 	
-	
+/*this is main game area containing the "grid:*/
 }
 #game-area{
 	background-image:url(images/1.jpg);
@@ -139,7 +142,7 @@ p{
 	position: relative;
 	overflow: hidden;
 }
-
+/*This is racer 1 on the blue bike*/
 #racer1{
 	background-image:url(images/motorcycle.svg);
 	width: 7%;
@@ -148,19 +151,21 @@ p{
 	min-height: 8%;
 	background-size:100% 100%;
 	margin-bottom: 15%;
+	margin-left: 1%;
 	margin-top: 17%;
 	float: left;
 	clear: left;
 	display: flex;
 }
 
-
+/*This is racer 2 on the green bike*/
 #racer2{
 	background-image:url(images/motorcycle2.svg );
 	width: 7%;
 	height: 10%;
 	background-size:100% 100%;
 	margin-bottom:-10%;
+	margin-left: 1%;
 	float: left;
 	clear: left;
 	display: flex;	
